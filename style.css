@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.alert {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 20px;
+  max-width: 450px;
+  min-width: 200px;
+  box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 5;
+  transform: translateX(150%);
+  animation: slider 2s linear 1;
+}
+
+.alert-icon {
+  font-size: 2.4rem;
+  margin-right: 20px;
+}
+
+.alert-icon--success {
+  color: greenyellow;
+}
+
+.alert-icon--fail {
+  color: crimson;
+}
+
+.alert-text {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+@keyframes slider {
+  20%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.todo {
+  max-width: 400px;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+}
+
+.todo-form {
+  width: 100%;
+  display: flex;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  border-right: none;
+  border: 1px solid #ccc;
+  font-size: 1.6rem;
+}
+
+.form-submit {
+  padding: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.todo-list {
+  margin-top: 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  /* padding-bottom: 5px; */
+  /* border: 1px solid #ccc; */
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.remove {
+  padding: 5px;
+  cursor: pointer;
+}
