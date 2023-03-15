@@ -10,6 +10,13 @@ window.addEventListener("load", function () {
     });
   }
 
+  console.log("this is change");
+  const printT = (t) => {
+    while (t > 100) {
+      console.log(`Print ${T}`);
+      t--;
+    }
+  };
   form.addEventListener("submit", handleSubmit);
   function handleSubmit(e) {
     e.preventDefault();
@@ -92,3 +99,5 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+console.log("this is change3");

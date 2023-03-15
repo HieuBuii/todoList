@@ -117,15 +117,6 @@ html {
   cursor: pointer;
 }
 
-.todo-list {
-  margin-top: 20px;
-  border-radius: 5px;
-  width: 100%;
-  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-  /* padding-bottom: 5px; */
-  /* border: 1px solid #ccc; */
-}
-
 .todo-item {
   display: flex;
   justify-content: space-between;
